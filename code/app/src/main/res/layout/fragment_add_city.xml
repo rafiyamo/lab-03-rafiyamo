@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/content_view"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:elevation="2dp"
-    android:padding="16dp"
-    android:orientation="horizontal"
-    >
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/city_text"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edit_text_city_text"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:textSize="30sp"
+        android:ems="10"
+        android:inputType="text"
         android:text="City"
         tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/province_text"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edit_text_province_text"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:textSize="30sp"
+        android:ems="10"
+        android:inputType="text"
         android:text="Province"
         tools:ignore="HardcodedText" />
 </LinearLayout>
